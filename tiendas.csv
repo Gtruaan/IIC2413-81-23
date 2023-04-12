@@ -1,0 +1,4 @@
+id,numero_telefonico,calle,numero,comuna,region,capacidad_est,id_jefe
+1,912345678,Calle San Joaquin,420,Santiago,Metropolitana,20,1
+2,912345679,Calle Calle,696,La Florida,Metropolitana,30,2
+3,912345681,Calle Donde Roban,32,La Cisterna,Metropolitana,40,3
