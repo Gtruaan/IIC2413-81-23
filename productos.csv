@@ -1,0 +1,10 @@
+id,nombre,precio,n_cajas,tipo
+1,silla,10,1,living
+2,sillon,12,1,living
+3,bar,20,1,living
+4,cama,12,1,dormitorio
+5,velador,6,1,dormitorio
+6,closet,15,1,dormitorio
+7,foco,2,1,iluminacion
+8,poste,10,1,iluminacion
+9,fogon,20,1,iluminacion
