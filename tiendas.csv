@@ -1,7 +1,0 @@
-id,numero_telefonico,calle,numero,comuna,region,capacidad_est,id_jefe
-1,912345678,Calle San Joaquin,420,Santiago,Metropolitana,20,1
-2,912345679,Calle Calle,696,La Florida,Metropolitana,30,2
-3,912345681,Calle Donde Roban,32,La Cisterna,Metropolitana,40,3
-4,912345683,Libertad,987,Villa Alemana,Valparaiso,35,4
-5,944875291,Calle Supercalle,789,Rancagua,OHiggins,13,5
-6,912345687,Lautaro,909,Valparaiso,Valparaiso,20,6
