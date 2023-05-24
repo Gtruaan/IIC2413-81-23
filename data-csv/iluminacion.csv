@@ -1,0 +1,35 @@
+id,color,descripcion,frecuencia,potencia,tension
+3715,Blanco frío,Sin descripcion,50,150,120
+3721,RGB,Bajo consumo,50,108,12
+3723,Blanco frío,Fragil,50,30,220
+3720,Blanco neutro,Fragil,50,18,220
+3726,Blanco frío,Bajo consumo,50,12,220
+3719,Blanco frío,Bajo consumo,50,14,220
+3697,Blanco cálido,Bajo consumo,60,5,240
+3708,Blanco frío,Bajo consumo,50,12,12
+3703,Blanco frío,Sin descripcion,50,35,120
+3700,RGB,Bajo consumo,50,30,12
+3712,RGB,Fragil,50,18,12
+3702,Blanco neutro,Bajo consumo,50,14,220
+3705,Blanco frío,Fragil,50,50,120
+3725,Blanco frío,Fragil,50,18,220
+3709,Blanco neutro,Bajo consumo,50,20,110
+3713,Blanco frío,Fragil,50,45,120
+3711,Blanco frío,Fragil,50,100,120
+3718,Blanco frío,Sin descripcion,50,60,220
+3696,Blanco neutro,Fragil,50,18,110
+3710,Blanco cálido,Bajo consumo,60,3,12
+3722,Blanco neutro,Fragil,50,40,220
+3694,Blanco cálido,Fragil,60,10,120
+3695,Blanco frío,Bajo consumo,50,12,220
+3699,Blanco cálido,Bajo consumo,60,18,220
+3706,Blanco neutro,Sin descripcion,50,7,220
+3698,Blanco frío,Fragil,50,45,120
+3716,Blanco frío,Fragil,50,35,220
+3724,Blanco cálido,Bajo consumo,50,3,220
+3714,Blanco cálido,Fragil,60,35,12
+3701,Blanco frío,Bajo consumo,50,7,110
+3704,Blanco cálido,Bajo consumo,60,72,12
+3707,Blanco cálido,Bajo consumo,60,18,220
+3717,Blanco cálido,Sin descripcion,60,12,220
+3727,Blanco frío,Bajo consumo,50,7,120
