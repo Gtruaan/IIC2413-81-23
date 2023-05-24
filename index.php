@@ -1,4 +1,5 @@
-<?php include('templates/header.html'); ?>
+<h1>Web-Muebles</h1>
+<h2>¡La mejor base de datos de muebles!</h2>
 
 <p>Bienvenido a Web-Muebles.<br>Puedes realizar las siguientes consultas:</p>
 
