@@ -10,6 +10,6 @@
     ?>
     <?php
     foreach ($regions as $region) {
-        echo '<option value="$region[0]">$region[0]</option>';
+        echo "<option value='$region[0]'>$region[0]</option>";
     }
     ?>
