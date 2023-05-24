@@ -5,12 +5,12 @@
 <?php
 require("../db/connection.php");
 
-$query_category = $_POST["category"];
+$query_category = $_POST["zone"];
 
 if ($query_category == "all"):
-    $query = "SELECT nombre, precio FROM productos ORDER BY precio DESC LIMIT 5;";
+    $query = "SELECT id,num_telefono,calle FROM tiendas;";
 else:
-    $query = "SELECT nombre, precio FROM productos WHERE tipo = '$query_category' ORDER BY precio DESC LIMIT 5;";
+    $query = "SELECT id,num_telefono,calle FROM tiendas WHERE comuna = '$query_category';";
 endif;
 
 $result = $db -> prepare($query);
@@ -21,13 +21,14 @@ $results = $result -> fetchAll();
 
 <table>
     <tr>
-        <th>Nombre</th>
-        <th>Precio</th>
+        <th>ID</th>
+        <th>Numero de telefono</th>
+        <th>Calle</th>
     </tr>
   
     <?php
         foreach ($results as $p) {
-            echo "<tr><td>$p[0]</td><td>$p[1]</td></tr>";
+            echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td></tr>";
         }
     ?>
       

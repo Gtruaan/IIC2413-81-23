@@ -10,7 +10,7 @@ Seleccione una categoria del producto. Web-Muebles le va a entregar los nombres 
 de los cinco productos mas caros de esta categoria. <br>
 </p>
 <form class="search" action="queries/type-price.php" method="post">
-    <select id="category" name="Categoria">
+    <select id="category" name="category">
         <option value="all">Todos</option>
         <option value="iluminacion">Iluminacion</option>
         <option value="dormitorio">Dormitorio</option>
@@ -26,7 +26,9 @@ Ingrese una comuna. Web-Muebles le va a entregar todas las tiendas ubicadas <br>
 en esta comuna, junto con su informacion. <br>
 </p>
 <form class="search" action="queries/zone.php" method="post">
-    <input type="text" name="name" placeholder="Comuna">
+    <select id="zone" name="zone">
+        <?php include('templates/zones.php'); ?>
+    </select>
     <br>
     <input type="submit" name="submit" value="Buscar">
 </form>
