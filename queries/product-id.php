@@ -7,7 +7,7 @@ require("../db/connection.php");
 
 $query_id = $_POST["id"];
 
-$query = "SELECT p.nombre,p.numero_cajas, SUM(c.peso) FROM productos p, cajas c WHERE c.id_producto = p.id AND p.id = '$query_id' GROUP BY p.id;";
+$query = "SELECT p.nombre, p.numero_cajas, SUM(c.peso) FROM productos p, cajas c WHERE c.id_producto = p.id AND p.id = '$query_id' GROUP BY p.id;";
 
 $result = $db -> prepare($query);
 
