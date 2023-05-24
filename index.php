@@ -54,7 +54,7 @@ en esta comuna, junto con su informacion. <br>
     <input type="text" name="name" placeholder="Nombre">
     <br>
     <select id="region" name="Region">
-        <php include('templates/regions.php'); ?>
+        <?php include('templates/regions.php'); ?>
     </select>
     <br>
     <input type="submit" name="submit" value="Buscar">
@@ -67,7 +67,7 @@ en esta comuna, junto con su informacion. <br>
 </p>
 <form class="search" action="queries/region-employees.php" method="post">
     <select id="region" name="Region">
-        <php include('templates/regions.php'); ?>
+        <?php include('templates/regions.php'); ?>
     </select>
     <br>
     <input type="submit" name="submit" value="Buscar">
@@ -81,7 +81,7 @@ en esta comuna, junto con su informacion. <br>
 </p>
 <form class="search" action="queries/region-workers.php" method="post">
     <select id="region" name="Region">
-        <php include('templates/regions.php'); ?>
+        <?php include('templates/regions.php'); ?>
     </select>
     <br>
     <input type="submit" name="submit" value="Buscar">
@@ -94,7 +94,7 @@ en esta comuna, junto con su informacion. <br>
 </p>
 <form class="search" action="queries/region-workers.php" method="post">
     <select id="region" name="Region">
-        <php include('templates/regions.php'); ?>
+        <?php include('templates/regions.php'); ?>
     </select>
     <br>
     <input type="submit" name="submit" value="Buscar">
