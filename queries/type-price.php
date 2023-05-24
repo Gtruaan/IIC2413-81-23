@@ -7,7 +7,12 @@ require("../db/connection.php");
 
 $query_category = $_POST["category"];
 
-$query = "SELECT nombre, precio FROM productos WHERE tipo = 'iluminacion' ORDER BY precio DESC LIMIT 5;";
+if ($query_category == "all") {
+    $query = "SELECT nombre, precio FROM productos ORDER BY precio DESC LIMIT 5;";
+} else {
+    $query = "SELECT nombre, precio FROM productos WHERE tipo = '$query_category' ORDER BY precio DESC LIMIT 5;";
+}
+
 
 $result = $db -> prepare($query);
 
