@@ -1,4 +1,4 @@
-<?php include('templates/header.html'); ?>
+<?php include('../templates/header.html'); ?>
 
 <h3>> Resultados de la consulta:</h3>
 
