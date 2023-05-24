@@ -7,7 +7,7 @@ require("../db/connection.php");
 
 $query_id = $_POST["region"];
 
-if ($query_category == "all"):
+if ($query_id == "all"):
     $query = "SELECT t.id_tienda, p.genero, COUNT(*) AS cantidad_personas, AVG(p.edad) AS edad_promedio FROM personal p, ubicada_en u, trabaja_en t WHERE u.id_tienda = t.id_tienda AND p.id = t.id_personal GROUP BY t.id_tienda, p.genero;";
 else:
     $query = "SELECT t.id_tienda, p.genero, COUNT(*) AS cantidad_personas, AVG(p.edad) AS edad_promedio FROM personal p, ubicada_en u, trabaja_en t WHERE u.region = '$query_category' AND u.id_tienda = t.id_tienda AND p.id = t.id_personal GROUP BY t.id_tienda, p.genero;";

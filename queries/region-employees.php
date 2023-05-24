@@ -7,7 +7,7 @@ require("../db/connection.php");
 
 $query_id = $_POST["region"];
 
-if ($query_category == "all"):
+if ($query_id == "all"):
     $query = "SELECT COUNT(w.id_personal) FROM tiendas t, ubicada_en u, trabaja_en w WHERE u.id_tienda = t.id AND w.id_tienda = t.id;";
 else:
     $query = "SELECT COUNT(w.id_personal) FROM tiendas t, ubicada_en u, trabaja_en w WHERE u.region = '$query_category' AND u.id_tienda = t.id AND w.id_tienda = t.id;";
