@@ -10,7 +10,7 @@ $query_id = $_POST["zone"];
 if ($query_id == "all"):
     $query = "SELECT id, num_telefono, calle FROM tiendas;";
 else:
-    $query = "SELECT id, num_telefono, calle FROM tiendas WHERE comuna = '$query_category';";
+    $query = "SELECT id, num_telefono, calle FROM tiendas WHERE comuna = '$query_id';";
 endif;
 
 $result = $db -> prepare($query);
