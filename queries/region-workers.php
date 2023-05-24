@@ -29,7 +29,7 @@ $results = $result -> fetchAll();
   
     <?php
         foreach ($results as $p) {
-            echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[2]</td></tr>";
+            echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td></tr>";
         }
     ?>
       
