@@ -24,11 +24,12 @@ $results = $result -> fetchAll();
         <th>ID Tienda</th>
         <th>Genero</th>
         <th>Cantidad</th>
+        <th>Edad promedio</th>
     </tr>
   
     <?php
         foreach ($results as $p) {
-            echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td></tr>";
+            echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[2]</td></tr>";
         }
     ?>
       
