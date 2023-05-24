@@ -55,7 +55,7 @@ en esta comuna, junto con su informacion. <br>
 <form class="search" action="queries/product-region.php" method="post">
     <input type="text" name="name" placeholder="Nombre">
     <br>
-    <select id="region" name="Region">
+    <select id="region" name="region">
         <?php include('templates/regions.php'); ?>
     </select>
     <br>
@@ -68,7 +68,7 @@ en esta comuna, junto con su informacion. <br>
     trabajando en las tiendas de esta region. <br>
 </p>
 <form class="search" action="queries/region-employees.php" method="post">
-    <select id="region" name="Region">
+    <select id="region" name="region">
         <?php include('templates/regions.php'); ?>
     </select>
     <br>
@@ -82,7 +82,7 @@ en esta comuna, junto con su informacion. <br>
     promedio (para cada genero). <br>
 </p>
 <form class="search" action="queries/region-workers.php" method="post">
-    <select id="region" name="Region">
+    <select id="region" name="region">
         <?php include('templates/regions.php'); ?>
     </select>
     <br>
@@ -95,7 +95,7 @@ en esta comuna, junto con su informacion. <br>
     region, su direccion, y el valor total del stock disponible en esta tienda. <br>
 </p>
 <form class="search" action="queries/region-workers.php" method="post">
-    <select id="region" name="Region">
+    <select id="region" name="region">
         <?php include('templates/regions.php'); ?>
     </select>
     <br>

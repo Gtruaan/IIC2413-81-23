@@ -5,13 +5,9 @@
 <?php
 require("../db/connection.php");
 
-$query_id = $_POST["zone"];
+$query_id = $_POST["id"];
 
-if ($query_category == "all"):
-    $query = "SELECT id,num_telefono,calle FROM tiendas;";
-else:
-    $query = "SELECT id,num_telefono,calle FROM tiendas WHERE comuna = '$query_category';";
-endif;
+$query = "SELECT p.nombre,p.numero_cajas, SUM(c.peso) FROM productos p, cajas c WHERE c.id_producto = p.id AND p.id = '$query_id' GROUP BY p.id;";
 
 $result = $db -> prepare($query);
 
@@ -21,9 +17,9 @@ $results = $result -> fetchAll();
 
 <table>
     <tr>
-        <th>ID</th>
-        <th>Numero de telefono</th>
-        <th>Calle</th>
+        <th>Nombre</th>
+        <th>Numero de cajas</th>
+        <th>Peso total</th>
     </tr>
   
     <?php
@@ -32,4 +28,4 @@ $results = $result -> fetchAll();
         }
     ?>
       
-</table>
+  </table>
